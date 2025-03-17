@@ -18,14 +18,14 @@ public class BookingPriceCalculator {
         double totalPrice = (adults * basePrice) + (children * 0.8 * basePrice) + (infants * 0.2 * basePrice);
 
         // Discount
-        if (totalPrice > 8 * basePrice) {
+        if (totalPrice > 7 * basePrice) {
             totalPrice = totalPrice * 0.9; // Discount 10%
         } else if (totalPrice > 5 * basePrice) {
             totalPrice = totalPrice * 0.95; // Discount 5%
         }
 
         // Additional fee for infants
-        if (infants >= 4) {
+        if (infants >= 3) {
             totalPrice = totalPrice + infants * 0.05 * basePrice;
         }
 
