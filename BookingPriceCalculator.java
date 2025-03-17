@@ -6,8 +6,8 @@ public class BookingPriceCalculator {
             return -1; //Invalid input
         }
 
-        if (totalPassengers > 10) {
-            return -1; //Exceeding number of total passengers
+        if (totalPassengers == 0 || totalPassengers > 10) {
+            return -1; //Outside valid range of total passengers
         }
 
         if (infants > adults) {
