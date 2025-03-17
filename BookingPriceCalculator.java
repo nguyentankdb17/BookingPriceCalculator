@@ -2,7 +2,7 @@ public class BookingPriceCalculator {
     public static double calculateBookingPrice(int infants, int children, int adults, double basePrice) {
         int totalPassengers = infants + children + adults;
 
-        if (adults < 0 || children < 0 || adults < 0 || basePrice < 0) {
+        if (infants < 0 || children < 0 || adults < 0 || basePrice < 0) {
             return -1; //Invalid input
         }
 
@@ -26,7 +26,7 @@ public class BookingPriceCalculator {
 
         // Additional fee for infants
         if (infants >= 4) {
-            totalPrice = totalPrice * 1.1;
+            totalPrice = totalPrice + infants * 0.05 * basePrice;
         }
 
         return totalPrice;
