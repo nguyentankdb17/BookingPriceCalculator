@@ -8,8 +8,7 @@
 
 Để là một booking hợp lệ thì cần thỏa mãn đồng thời các điều kiện sau:
 - Các tham số đầu vào không có tham số nào có giá trị âm
-- Số lượng hành khách trong một booking phải là số dương
-- Số lượng hành khách trong một booking không vượt quá 10
+- Số lượng hành khách trong một booking phải là số dương và không vượt quá 10
 - Trong mỗi booking phải có ít nhất một người lớn
 - Số lượng trẻ sơ sinh không vượt quá số lượng người lớn (do trẻ sơ sinh sẽ ngồi cùng chỗ với người lớn)
   
